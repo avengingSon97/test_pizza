@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Classics</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Mr+Dafoe|Nothing+You+Could+Do|Yellowtail|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1 id="mainh1">Pizza Classics</h1>
+    <main>
+    
+    <div class="section-card visible" id="section1">
+
+        <header>
+            <h1>Choose your size!</h1>
+        </header>
+        
+        <p>
+            Personal
+            <input type="radio" name="size" id="Personal size" data-price="8">                
+        </p>
+        
+        <p>
+            Medium
+            <input type="radio" name="size" id="Medium size" data-price="10">
+        </p>
+        
+        <p>
+            Large
+            <input type="radio" name="size" id="Large size" data-price="14">
+        </p>
+        
+        <p>
+            Extra Large 
+            <input type="radio" name="size" id="Extra large" data-price="16">
+        </p>
+        
+        <button class="back">Back</button>    
+        <button class="submit">Next</button>
+            
+    </div>
+        
+    <div class="section-card" id="section2">
+        <h1>Select Pizza!</h1>
+        <p>
+            Margherita
+            <input type="radio" name="pizza" id="Margherita" data-price="0" >
+        </p>
+        
+        <p>
+            Salame
+            <input type="radio" name="pizza" id="Salame" data-price="0">
+        </p>
+        
+        <p>
+            Prosciutto
+            <input type="radio" name="pizza" id="Prosciutto" data-price="0">                
+        </p>
+        
+        <p>
+            Napoli
+            <input type="radio" name="pizza" id="Napoli" data-price="0">
+        </p>
+        
+        <button class="back">Back</button>    
+        <button class="submit">Next</button>
+    </div>
+        
+    <div class="section-card" id="section3">
+         <header>
+             <h1>How cheesy<br>are you?</h1>
+         </header>
+         
+         <p>
+             Regular
+             <input type="radio" name="cheese" id="Regular cheese" data-price="2">
+         </p>
+         <p>
+            Extra Cheese
+            <input type="radio" name="cheese" id="Extra Cheese" data-price="3">
+         </p>
+         <p>
+             No cheese
+             <input type="radio" name="cheese" id="No cheese" data-price="0">
+         </p>
+         
+         <button class="back">
+             Back
+         </button>    
+         
+         <button class="submit">
+             Next
+         </button>
+    </div>
+        
+    <div class="section-card" id="section4">
+        <header>
+            <h1>Everyone bites<br>the crust</h1>
+        </header>
+        <p>Plain Crust<input type="radio" name="crust" id="Plain Crust" data-price="2"></p>
+        <p>Garlic Butter Crust<input type="radio" name="crust" id="Garlic Butter Crust" data-price="3"></p>
+        <p>Cheese Stuffed Crust<input data-price="3" type="radio" name="crust" id="Cheese Stuffed Crust" data-price="3"></p>
+        <p>Spicy Crust<input type="radio" name="crust" id="Spicy Crust" data-price="3"></p>
+        <p>House Special Crust<input type="radio" name="crust" id="House Special Crust" data-price="4"></p>
+        <button class="back">Back</button>    
+        <button class="submit">Next</button>
+    </div>
+    
+    <div class="section-card" id="section5">
+        <header>
+            <h1>Our pizzas are saucy</h1>
+        </header>
+        <p>Marinara sauce<input type="radio" name="sauce" id="Marinara sauce" data-price="2"></p>
+        <p>White sauce<input type="radio" name="sauce" id="White sauce" data-price="2"></p>
+        <p>Barbeque sauce<input type="radio" name="sauce" id="Barbeque sauce" data-price="2"></p>
+        <p>No Sauce<input type="radio" name="sauce" id="No Sauce" data-price="0"></p>
+        <button class="back">Back</button>    
+        <button class="submit">Next</button>
+    </div>
+    
+    <div class="section-card last" id="section6">
+        <header>
+            <h1>Always eat your veggies</h1>
+            The first type of veggie is included. All additional veggie items cost $1 each.
+        </header>
+
+        <p>Tomatoes<input type="checkbox" name="veggies" id="Tomatoes" data-price="2"></p>
+        <p>Onions<input type="checkbox" name="veggies" id="Onions" data-price="2"></p>
+        <p>Olives<input type="checkbox" name="veggies" id="Olives" data-price="2"></p>
+        <p>Green Peppers<input type="checkbox" name="veggies" id="Green Peppers" data-price="2"></p>
+        <p>Mushrooms<input type="checkbox" name="veggies" id="Mushrooms" data-price="2"></p>
+        <p>Pineapple <input type="checkbox" name="veggies" id="Pineapple" data-price="2"></p>
+        <p>Spinach <input type="checkbox" name="veggies" id="Spinach" data-price="2"></p>
+        <p>Jalapeno <input type="checkbox" name="veggies" id="Jalapeno" data-price="2"></p>
+        <button class="back">Back</button>    
+        <button class="submit">Next</button>
+    </div>
+    
+    <div id="tally">
+        <h1>Your order</h1>
+    </div>
+</main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
