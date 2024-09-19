@@ -15,10 +15,12 @@ Pete's pizzera title
 #mainh1 {
     font-family: 'Nothing You Could Do', cursive;
     color: white;
-    position: relative;
+    text-align: right;
+    position: sticky;
     top: 2rem;
+    padding-right: 200px;
     left: 3rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px #ffffff;
 }
 /*
@@ -28,30 +30,15 @@ The box with the content
 */
 .section-card {
     background-color: rgba(255,255,255,0.5);
-    top:0 0;
-    margin-left: 3rem;
-    margin-top: 8rem;
+   
     padding: 1.5rem;
+    padding-top: 20px;
     border-radius: 15px;
     border: 5px solid rgba(232, 232, 232,0.5);
-    width: 15rem;
+    width: 100%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     display: none;
 
-}
-
-.section-card.visible.Phone {
-    visibility: collapse;
-
-}
-
-@media only screen and(max-width: 414px) {
-    .section-card{
-        visibility: collapse;
-    }
-    .section-card.visible.Phone{
-        visibility:visible
-    }
 }
 
 
@@ -68,13 +55,15 @@ The class that will hide all boxes unless the person clicks on next, in which ca
 .section-card.visible {
   background-color: rgba(255,255,255,0.5);
   position: relative;
+  float:left;
   top:0 0;
   margin-left: 3rem;
   margin-top: 8rem;
   padding: 1.5rem;
   border-radius: 15px;
   border: 5px solid rgba(232, 232, 232,0.5);
-  width: 15rem;
+  box-sizing: border-box;
+  width: 50%;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
   display: block;
  
@@ -137,7 +126,7 @@ The box with the content
     padding: 1.5rem;
     border-radius: 15px;
     border: 5px solid rgba(232, 232, 232,0.5);
-    width: 15rem;
+    width: 20rem;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5)
     }
 
@@ -162,13 +151,13 @@ After pressing the last next button, the #ids change
 #finaltally{
     background-color: rgba(255,255,255,0.7);
     float: top;
-    top:8rem;
+    top:10rem;
     right: 30%;
     left: 30%;
     padding: 1.5rem;
     border-radius: 15px;
     border: 5px solid rgba(232, 232, 232,0.5);
-    width: 30rem;
+    width: 60rem;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     font-size: 1rem;
     }
@@ -181,7 +170,7 @@ After pressing the last next button, the #ids change
     padding: 1.5rem;
     border-radius: 15px;
     border: 5px solid rgba(232, 232, 232,0.5);
-    width: 30rem;
+    width: 100%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     font-size: 1rem;
     display: none;
